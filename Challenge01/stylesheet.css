@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&family=Viga&display=swap');
+body {
+	margin: 0em;
+	color: white;
+    font-family: 'Rubik', sans-serif;
+    background-image: url("images/mintbean-dome.png");
+    background-size: cover;
+    background-position: center;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    background-color: #222833;
+
+}
+
+header {
+	background-color: #222833;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	padding: 1em;
+}
+
+#menu-icon {
+	margin: auto;
+	margin-right: 1em;
+}
+
+
+.bar {
+	width: 35px;
+	background-color: #5ef4d6;;
+	height: 5px;
+	margin: 6px 0;
+}
+
+a {
+	display: none;
+	text-decoration: none;
+	color: inherit;
+}
+
+.card {
+	padding: 1.5em;
+	margin: 5%;
+	border: 0.2em lightblue solid;
+	background-color: rgba(0, 0, 0, .5);
+	width: auto;
+    border-radius: 1em;
+}
+
+.card h2 {
+    text-transform: uppercase;
+    font-family: 'Viga', sans-serif;
+    font-size: 1.7em;
+    margin: 0;
+}
+
+
+.join {
+    background-color: #5ef4d6;
+    color: black;
+    text-align: center;
+    margin: auto;
+    text-transform: uppercase;
+   border:none;
+    font-family: 'Rubik', sans-serif;
+} 
+
+.card .join{
+    font-size: 1.25em;
+    padding: .75em;
+    width: 100%;
+    border-radius: 1em;
+    transition: ease;
+    transition-duration: 1s;
+}
+
+.join:hover {
+    background-color: violet;
+    transition: ease;
+    transition-duration: 1s;
+}
+
+@media screen and (min-width: 800px) {
+    .card{
+        width: 45%;
+    }
+
+    .card .join{
+        width: 50%;
+        min-width: fit-content;
+    }
+
+    nav {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+   a {
+        display: unset;
+        border-right: thin white solid;
+        padding: 0 10px 0 5px;
+        transition: ease;
+        transition-duration: 1s;
+    }
+
+    a.join {
+        border-radius: .5em;
+        padding: 5px 10px;
+    }
+
+    a:hover {
+        background-color: violet;
+        padding: 1em;
+        transition: ease;
+        transition-duration: 1s;
+    }
+
+    
+
+    #menu-icon{
+        display: none;
+    }
+     header {
+        width: 90%;
+        margin-left: auto ;
+        margin-right: auto;
+    }
+}
+
