@@ -23,14 +23,31 @@ header {
 #menu-icon {
 	margin: auto;
 	margin-right: 1em;
+    padding: .3em;
+    transition: ease;
+    transition-duration: 1s;
 }
 
+#menu-icon:hover {
+    background-color: #5ef4d6;;
+    /* padding: .5em; */
+    transition: ease;
+    transition-duration: 1s;
+}
+
+#menu-icon:hover div {
+   background-color: #222833;
+   transition: ease;
+    transition-duration: 1s;
+}
 
 .bar {
 	width: 35px;
 	background-color: #5ef4d6;;
 	height: 5px;
 	margin: 6px 0;
+    transition: ease;
+    transition-duration: 1s;
 }
 
 a {
@@ -42,13 +59,13 @@ a {
 .card {
 	padding: 1.5em;
 	margin: 5%;
-	border: 0.2em lightblue solid;
+	border: 0.3em  #5ef4d6 solid;
 	background-color: rgba(0, 0, 0, .5);
 	width: auto;
     border-radius: 1em;
 }
 
-.card h2 {
+.card h1 {
     text-transform: uppercase;
     font-family: 'Viga', sans-serif;
     font-size: 1.7em;
@@ -76,7 +93,8 @@ a {
 }
 
 .join:hover {
-    background-color: violet;
+    background-color: #4F29D9;
+color: white;
     transition: ease;
     transition-duration: 1s;
 }
@@ -110,7 +128,8 @@ a {
     }
 
     a:hover {
-        background-color: violet;
+        background-color: #4F29D9;
+        color: white;
         padding: 1em;
         transition: ease;
         transition-duration: 1s;
