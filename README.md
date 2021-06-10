@@ -1,5 +1,8 @@
 <img src="./Challenge01/images/learnabit-logo.png" />
 
+
+[Challenge 1 Github page](https://ka9kdc.github.io/Learn-a-bit/Challenge01/)
+
 Welcome to Learn-a-bit
 
 [Learn-a-bit Guidebook](https://sites.google.com/mintbean.io/mintbean-learn-a-bit-guide/about-learn-a-bit)
