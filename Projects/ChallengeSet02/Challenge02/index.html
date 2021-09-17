@@ -11,7 +11,7 @@
 	<body>
 		<main>
 			<h1>Photos</h1>
-			<section class="photo_container">
+			<section class="flex_container">
 				<img
 					class="box"
 					src="images/Optimized-IMG_0113.jpg"
@@ -86,11 +86,10 @@
 		</main>
 		<script type="text/javascript">
 			const photoContainer =
-				document.getElementsByClassName("photo_container")[0];
+				document.getElementsByClassName("flex_container")[0];
 			photoContainer.addEventListener("click", (event) => {
-				const oldFeature = document.getElementById("Feature");
-
 				const target = event.target;
+
 				if (target.tagName === "IMG" && target.className === "box") {
 					const newFeature = document.createElement("img");
 					newFeature.src = target.src;
@@ -100,6 +99,8 @@
 					newFeature.addEventListener("click", (event) => {
 						newFeature.remove();
 					});
+
+					const oldFeature = document.getElementById("Feature");
 					if (oldFeature) {
 						photoContainer.replaceChild(newFeature, oldFeature);
 					} else {
