@@ -84,5 +84,29 @@
 				/>
 			</section>
 		</main>
+		<script type="text/javascript">
+			const photoContainer =
+				document.getElementsByClassName("photo_container")[0];
+			photoContainer.addEventListener("click", (event) => {
+				const oldFeature = document.getElementById("Feature");
+
+				const target = event.target;
+				if (target.tagName === "IMG" && target.className === "box") {
+					const newFeature = document.createElement("img");
+					newFeature.src = target.src;
+					newFeature.alt = target.alt;
+					newFeature.id = "Feature";
+					newFeature.className = "box active";
+					newFeature.addEventListener("click", (event) => {
+						newFeature.remove();
+					});
+					if (oldFeature) {
+						photoContainer.replaceChild(newFeature, oldFeature);
+					} else {
+						photoContainer.appendChild(newFeature);
+					}
+				}
+			});
+		</script>
 	</body>
 </html>
