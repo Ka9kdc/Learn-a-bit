@@ -16,29 +16,30 @@
 .heading {
 	width: 85%;
 	padding: 0.5em;
+
+	margin: 25vh auto;
 	font-size: 1.5em;
 	color: white;
-	margin: 25vh auto;
 	background-color: rgba(150, 150, 150, 0.5);
 	border-radius: 1em;
 	animation: slideUP 2s;
 }
 
 .heading h1 {
-	text-transform: uppercase;
 	color: white;
+	text-transform: uppercase;
 	text-shadow: 2px 2px black;
 }
 
 .heading button {
+	align-self: center;
 	margin: 0.2em;
 	padding: 0.5em;
-	background-color: #e77a80;
-	border-radius: 0.5em;
-	align-self: center;
 	border: unset;
+	border-radius: 0.5em;
 	font-weight: 700;
 	font-size: 1.3rem;
+	background-color: #e77a80;
 	transition: background-color 2s ease;
 }
 
@@ -49,20 +50,20 @@
 
 /* navbar */
 #navbar {
+	align-items: center;
 	margin-left: auto;
 	margin-right: auto;
-	align-items: center;
 }
 
 .menu {
-	list-style-type: none;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0px 10px;
-	font-size: 2em;
 	margin-bottom: 0;
+	padding: 0px 10px;
+	list-style-type: none;
+	font-size: 2em;
 }
 
 .menu li a {
@@ -80,16 +81,18 @@
 }
 
 .item {
+	display: none;
 	order: 2;
 	width: 100%;
 	text-align: center;
-	display: none;
 }
 
-.item:not(.button) a:hover,
-.item a:hover::after {
-	background-color: #e77a80;
+.item a {
 	transition: background-color 2s;
+}
+
+.item a:hover {
+	background-color: #e77a80;
 }
 
 .toggle {
@@ -98,8 +101,8 @@
 
 .active .item {
 	display: block;
-	animation: growDown 2s;
 	transform-origin: top center;
+	animation: growDown 2s;
 }
 
 .heading.active {
@@ -124,22 +127,6 @@
 	}
 }
 
-@keyframes rotateX {
-	0% {
-		opacity: 0;
-		transform: scaleY(0);
-		transform: rotateX(-90deg);
-	}
-	50% {
-		transform: rotateX(-20deg);
-	}
-	100% {
-		transform: scaleY(1);
-		opacity: 1;
-		transform: rotateX(0deg);
-	}
-}
-
 @keyframes slideDown {
 	0% {
 		margin-top: -25vh;
@@ -159,6 +146,14 @@
 }
 
 @media (min-width: 960px) {
+	.heading {
+		width: 40%;
+		margin: 25vh 5vw;
+	}
+	.heading.active {
+		margin-top: 25vh;
+	}
+
 	#navbar {
 		margin-left: auto;
 		margin-right: auto;
@@ -181,23 +176,25 @@
 
 	.logo {
 		margin-right: 40%;
+		transition: transform 2s;
+	}
+
+	.logo:hover {
+		transform: scale(1.2);
 	}
 
 	.item {
 		display: unset;
 	}
 
-	.heading {
-		width: 40%;
-		margin: 25vh 5vw;
+	.item a {
+		transition: all 2s;
 	}
-    
-	.item:not(.button) a:hover,
-	.item a:hover::after {
+
+	.item a:hover {
+		padding: 10px;
 		background-color: #e77a80;
 		border-radius: 10px;
 		font-size: 1.5em;
-		padding: 10px;
-		transition: all 2s;
 	}
 }
