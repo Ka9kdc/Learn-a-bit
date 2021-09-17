@@ -35,11 +35,23 @@ h1 {
 	height: auto;
 	z-index: 2;
 	border: 10px black solid;
-	transition: all 2s;
+	animation: growDown 2s
 }
 
 .box.active:hover {
 	transform: unset;
+}
+
+@keyframes growDown {
+	0% {
+		transform: scaleY(0);
+	}
+	80% {
+		transform: scaleY(1.1);
+	}
+	100% {
+		transform: scaleY(1);
+	}
 }
 
 @media (min-width: 960px) and (max-width: 1600px) {
