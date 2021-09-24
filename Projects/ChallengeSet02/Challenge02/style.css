@@ -3,7 +3,7 @@ h1 {
 	font-size: 4em;
 }
 
-.flex_container {
+.flex_container_row {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
@@ -35,7 +35,7 @@ h1 {
 	height: auto;
 	z-index: 2;
 	border: 10px black solid;
-	animation: growDown 2s
+	animation: growDown 2s;
 }
 
 .box.active:hover {
