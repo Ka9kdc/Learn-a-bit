@@ -18,27 +18,30 @@ h1 {
 }
 
 .price_heading h2 {
-	text-align: var(--center);
-	font-size: 15vw;
 	margin-top: unset;
 	margin-bottom: -10px;
+	text-align: var(--center);
+	font-size: 15vw;
 }
 
 .price_heading p {
-	text-align: right;
 	margin-top: unset;
+	text-align: right;
 }
 
 .flex_container_col {
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: var(--center);
-	width: 100%;
 	align-content: var(--center);
 	gap: 2em;
+	width: 100%;
 }
 
 .price_box {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: var(--center);
 	min-width: max-content;
 	min-height: max-content;
 	width: var(--div-width);
@@ -49,12 +52,9 @@ h1 {
 	border: 2px solid gray;
 	background: linear-gradient(lightgray, white);
 	box-shadow: 0px 0px 0px gray;
-	transition: border 2s, box-shadow 2s, transform 2s;
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: var(--center);
 	font-size: 8vw;
 	text-align: var(--center);
+	transition: border 2s, box-shadow 2s, transform 2s;
 }
 
 .price_box:hover {
@@ -73,26 +73,25 @@ h1 {
 }
 
 .price_box button {
-	background-color: unset;
-
 	align-self: var(--center);
+	padding: 0.4em;
 	width: 70%;
+	background-color: unset;
 	border: unset;
 	border-radius: 0.5em;
 	font-size: 1em;
-	padding: 0.4em;
 	opacity: 0;
 	transition: all 2s;
 }
 
 .price_box:hover button {
-	opacity: 1;
 	background-color: gold;
+	opacity: 1;
 }
 
 .price_box:hover button:hover {
-	opacity: 1;
 	background-color: red;
+	opacity: 1;
 }
 
 @media (min-width: 460px) {
@@ -105,8 +104,8 @@ h1 {
 	}
 
 	.price_box {
-		font-size: 3vmin;
 		max-height: 50vmin;
+		font-size: 3vmin;
 	}
 
 	.price_box:hover {
