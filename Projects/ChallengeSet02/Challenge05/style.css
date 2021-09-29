@@ -1,0 +1,42 @@
+body{
+    margin: 0px;
+    box-sizing:border-box;
+}
+
+footer {
+    background-color: rgba(145, 135, 182, 0.9);
+    width: calc(100% - 20px);
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 10px;
+}
+
+
+#navbar{
+    width: 70%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+}
+
+#navbar a{
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    transition: all 2s;
+}
+
+#navbar a:hover {
+    background-color: #e77a80;
+    border-radius: 10px;
+    transform: scale(1.2);
+}
+
+footer p{
+font-size: 75%;
+    margin-top: 0px;
+}
