@@ -6,48 +6,97 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Challenge Submission Index</title>
 		<style>
-			body{
+			body {
 				margin: 0px;
 				width: 100vw;
-				 display: flex;
-				 flex-flow: column nowrap;
+				display: flex;
+				flex-flow: column nowrap;
 			}
 			.responsive-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
- border: unset
-}
-.iframe_wrapper{
-	position: relative;
-  width: 100%;
-  height: var(--mobile-height);
-  padding-top: 56.25%;
-}
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				width: 100%;
+				height: 100%;
+				border: unset;
+			}
+			.iframe_wrapper {
+				position: relative;
+				width: 100%;
+				height: var(--mobile-height);
+				padding-top: 56.25%;
+			}
 
-@media (min-width: 430px) and (max-width: 760px) {
-	.iframe_wrapper{
-		height: var(--tablet-height);
-	}
-}
-@media (min-width: 760px) {
-	.iframe_wrapper{
-		height: var(--desktop-height);
-	}
-}
+			@media (min-width: 430px) and (max-width: 760px) {
+				.iframe_wrapper {
+					height: var(--tablet-height);
+				}
+			}
+			@media (min-width: 760px) {
+				.iframe_wrapper {
+					height: var(--desktop-height);
+				}
+			}
 		</style>
 	</head>
 	<body>
-
-		
-		<div class="iframe_wrapper" style="--mobile-height: 100vh; --tablet-height: 100vh; --desktop-height: 100vh;" ><iframe src="Projects/ChallengeSet02/Challenge01/index.html" class="responsive-iframe"></iframe></div>
-		<div class="iframe_wrapper" id="photo" style="--mobile-height: 60em; --tablet-height: calc(28vw * 7); --desktop-height: calc(26vw * 3)" ><iframe src="Projects/ChallengeSet02/Challenge02/index.html" class="responsive-iframe" ></iframe></div>
-		<div class="iframe_wrapper" id="price" style="--mobile-height: calc(78vw * 1.5 * 3); --tablet-height: calc(72vw * 1.5 * 3); --desktop-height: 10em" ><iframe src="Projects/ChallengeSet02/Challenge03/index.html" class="responsive-iframe" ></iframe></div>
-		<div class="iframe_wrapper" id="review" style="--mobile-height: 90em; --tablet-height: 63em; --desktop-height: 20em" ><iframe src="Projects/ChallengeSet02/Challenge04/index.html" class="responsive-iframe" ></iframe></div>
+		<div
+			class="iframe_wrapper"
+			style="
+				--mobile-height: 100vh;
+				--tablet-height: 100vh;
+				--desktop-height: 100vh;
+			"
+		>
+			<iframe
+				src="Projects/ChallengeSet02/Challenge01/index.html"
+				class="responsive-iframe"
+			></iframe>
+		</div>
+		<div
+			class="iframe_wrapper"
+			id="photo"
+			style="
+				--mobile-height: 60em;
+				--tablet-height: calc(28vw * 7);
+				--desktop-height: calc(26vw * 3);
+			"
+		>
+			<iframe
+				src="Projects/ChallengeSet02/Challenge02/index.html"
+				class="responsive-iframe"
+			></iframe>
+		</div>
+		<div
+			class="iframe_wrapper"
+			id="price"
+			style="
+				--mobile-height: calc(78vw * 1.5 * 3);
+				--tablet-height: calc(72vw * 1.5 * 3);
+				--desktop-height: 10em;
+			"
+		>
+			<iframe
+				src="Projects/ChallengeSet02/Challenge03/index.html"
+				class="responsive-iframe"
+			></iframe>
+		</div>
+		<div
+			class="iframe_wrapper"
+			id="review"
+			style="
+				--mobile-height: 90em;
+				--tablet-height: 63em;
+				--desktop-height: 20em;
+			"
+		>
+			<iframe
+				src="Projects/ChallengeSet02/Challenge04/index.html"
+				class="responsive-iframe"
+			></iframe>
+		</div>
 		<!-- <div class="iframe_wrapper" id="contact" style="--mobile-height: 100vh; --tablet-height: 100em; --desktop-height: 100em; background-color: turquoise;" ></div> -->
 	</body>
 </html>

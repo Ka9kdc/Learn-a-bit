@@ -95,8 +95,6 @@ h1 {
 	opacity: 1;
 }
 
-
-
 @media (min-width: 760px) {
 	:root {
 		--div-width: 25vw;
@@ -119,7 +117,4 @@ h1 {
 	.price_box:hover {
 		transform: scale(1.2);
 	}
-	
-
-	
 }
