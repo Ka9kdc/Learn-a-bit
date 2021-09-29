@@ -144,7 +144,7 @@
 	}
 }
 
-@media (min-width: 960px) {
+@media (min-width: 760px) {
 	.heading {
 		width: 40%;
 		margin: 25vh 5vw;
@@ -196,12 +196,12 @@
 		font-size: 1.5em;
 	}
 
-	@keyframes spin{
-		0%{
-			transform: rotateZ(0deg)
+	@keyframes spin {
+		0% {
+			transform: rotateZ(0deg);
 		}
-		100%{
-			transform: rotateZ(360deg)
+		100% {
+			transform: rotateZ(360deg);
 		}
 	}
 }

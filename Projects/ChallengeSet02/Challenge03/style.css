@@ -46,8 +46,9 @@ h1 {
 	min-height: max-content;
 	width: var(--div-width);
 	height: calc(var(--div-width) * 1.5);
-	max-width: 300px;
-	max-height: 500px;
+	max-width: 400px;
+	max-height: 800px;
+	padding: 20px;
 	border-radius: 1em;
 	border: 2px solid gray;
 	background: linear-gradient(lightgray, white);
@@ -94,7 +95,12 @@ h1 {
 	opacity: 1;
 }
 
-@media (min-width: 460px) {
+
+
+@media (min-width: 760px) {
+	:root {
+		--div-width: 25vw;
+	}
 	.price_heading h2 {
 		font-size: 8vmin;
 	}
@@ -104,11 +110,16 @@ h1 {
 	}
 
 	.price_box {
-		max-height: 50vmin;
+		/* max-height: 50vmin; */
 		font-size: 3vmin;
+		padding: 1em;
+		/* margin: 1em; */
 	}
 
 	.price_box:hover {
 		transform: scale(1.2);
 	}
+	
+
+	
 }

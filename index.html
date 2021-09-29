@@ -5,34 +5,46 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Challenge Submission Index</title>
+		<style>
+			body{
+				margin: 0px;
+			display: grid;
+			grid-template-columns: 100%;
+			grid-template-rows: 100vh 150vh 300vh repeat(2,1fr);
+				height: 1000vmax;
+			}
+			.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.iframe_wrapper{
+	position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+@media (min-width: 760px) {
+	body{
+		grid-template-columns: 100%;
+			grid-template-rows: repeat(5, 20%);
+				height: 500vmax;
+	}
+	/* .iframe_wrapper{
+		height: var(--smaller-height);
+	} */
+}
+		</style>
 	</head>
 	<body>
-		<ul>
-			<li>Challenge Set 02</li>
-			<ol>
-				<li>
-					<a href="Projects/ChallengeSet02/Challenge01/"
-						>Challenge 01</a
-					>
-				</li>
-				<li>
-					<a href="Projects/ChallengeSet02/Challenge02/"
-						>Challenge 02</a
-					>
-				</li>
-				<li>
-					<a href="Projects/ChallengeSet02/Challenge03/"
-						>Challenge 03</a
-					>
-				</li>
-				<li>
-					<a href="Projects/ChallengeSet02/Challenge04/"
-						>Challenge 04</a
-					>
-				</li>
 
-
-			</ol>
-		</ul>
+		<div class="iframe_wrapper"  ><object data="Projects/ChallengeSet02/Challenge01/index.html" class="responsive-iframe"></object></div>
+		<div class="iframe_wrapper" ><object data="Projects/ChallengeSet02/Challenge02/index.html" class="responsive-iframe" ></object></div>
+		<div class="iframe_wrapper" ><object data="Projects/ChallengeSet02/Challenge03/index.html" class="responsive-iframe" ></object></div>
+		<div class="iframe_wrapper" ><object data="Projects/ChallengeSet02/Challenge04/index.html" class="responsive-iframe" ></object></div>
 	</body>
 </html>
