@@ -175,10 +175,12 @@
 
 	.logo {
 		margin-right: 40%;
+		transform: rotateZ(0deg);
+		transition: transform 3s;
 	}
 
 	.logo:hover {
-		animation: spin 3s ease;
+		transform: rotateZ(360deg);
 	}
 
 	.item {
@@ -196,12 +198,4 @@
 		font-size: 1.5em;
 	}
 
-	@keyframes spin {
-		0% {
-			transform: rotateZ(0deg);
-		}
-		100% {
-			transform: rotateZ(360deg);
-		}
-	}
 }
