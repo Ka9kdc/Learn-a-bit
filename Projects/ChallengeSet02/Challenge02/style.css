@@ -64,7 +64,7 @@ h1 {
 
 	.box.active {
 		width: auto;
-		height: 60vh;
+		height: 27%;
 	}
 }
 
@@ -78,6 +78,6 @@ h1 {
 
 	.box.active {
 		width: auto;
-		height: 60vh;
+		height: 20vh;
 	}
 }
