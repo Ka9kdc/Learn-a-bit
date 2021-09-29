@@ -47,7 +47,7 @@ h1 {
 	width: var(--div-width);
 	height: calc(var(--div-width) * 1.5);
 	max-width: 400px;
-	max-height: 800px;
+	max-height: 650px;
 	padding: 20px;
 	border-radius: 1em;
 	border: 2px solid gray;
