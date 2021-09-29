@@ -8,10 +8,9 @@
 		<style>
 			body{
 				margin: 0px;
-			display: grid;
-			grid-template-columns: 100%;
-			grid-template-rows: 100vh 150vh 300vh repeat(2,1fr);
-				height: 1000vmax;
+				width: 100vw;
+				 display: flex;
+				 flex-flow: column nowrap;
 			}
 			.responsive-iframe {
   position: absolute;
@@ -21,30 +20,33 @@
   right: 0;
   width: 100%;
   height: 100%;
+ 
 }
 .iframe_wrapper{
 	position: relative;
-  overflow: hidden;
   width: 100%;
+  height: var(--mobile-height);
   padding-top: 56.25%;
 }
-@media (min-width: 760px) {
-	body{
-		grid-template-columns: 100%;
-			grid-template-rows: repeat(5, 20%);
-				height: 500vmax;
+
+@media (min-width: 430px) and (max-width: 760px) {
+	.iframe_wrapper{
+		height: var(--tablet-height);
 	}
-	/* .iframe_wrapper{
-		height: var(--smaller-height);
-	} */
+}
+@media (min-width: 760px) {
+	.iframe_wrapper{
+		height: var(--desktop-height);
+	}
 }
 		</style>
 	</head>
 	<body>
 
-		<div class="iframe_wrapper"  ><object data="Projects/ChallengeSet02/Challenge01/index.html" class="responsive-iframe"></object></div>
-		<div class="iframe_wrapper" ><object data="Projects/ChallengeSet02/Challenge02/index.html" class="responsive-iframe" ></object></div>
-		<div class="iframe_wrapper" ><object data="Projects/ChallengeSet02/Challenge03/index.html" class="responsive-iframe" ></object></div>
-		<div class="iframe_wrapper" ><object data="Projects/ChallengeSet02/Challenge04/index.html" class="responsive-iframe" ></object></div>
+		<div class="iframe_wrapper"  style="--mobile-height: 100vh; --tablet-height: 100vh; --desktop-height: 100vh;" ><object data="Projects/ChallengeSet02/Challenge01/index.html" class="responsive-iframe"></object></div>
+		<div class="iframe_wrapper" style="--mobile-height: 60em; --tablet-height: 100em; --desktop-height: 100em" ><object data="Projects/ChallengeSet02/Challenge02/index.html" class="responsive-iframe" ></object></div>
+		<div class="iframe_wrapper" style="--mobile-height: 85em; --tablet-height: 100em; --desktop-height: 100em" ><object data="Projects/ChallengeSet02/Challenge03/index.html" class="responsive-iframe" ></object></div>
+		<div class="iframe_wrapper" style="--mobile-height: 90em; --tablet-height: 100em; --desktop-height: 100em" ><object data="Projects/ChallengeSet02/Challenge04/index.html" class="responsive-iframe" ></object></div>
+		<div class="iframe_wrapper" style="--mobile-height: 100vh; --tablet-height: 100em; --desktop-height: 100em; background-color: turquoise;" ></div>
 	</body>
 </html>

@@ -101,7 +101,7 @@ h1 {
 	border-top-right-radius: 50%;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 330px) {
 	.star_container {
 		font-size: 20px;
 	}

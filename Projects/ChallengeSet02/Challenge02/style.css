@@ -14,8 +14,8 @@ h1 {
 	--div-width: 40%;
 	width: var(--div-width);
 	height: calc(var(--div-width) / 2);
-	min-width: 10em;
-	min-height: 10em;
+	min-width: 116px;
+	min-height: 116px;
 	border-radius: 1.5em;
 	margin: 0.5em;
 	box-shadow: 0px 0px 0px gray;
