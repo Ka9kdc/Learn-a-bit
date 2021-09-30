@@ -50,8 +50,8 @@
 /* navbar */
 #navbar {
 	align-items: center;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 1em;
+	margin-right: 1em;
 }
 
 .menu {
@@ -144,7 +144,7 @@
 	}
 }
 
-@media (min-width: 760px) {
+@media (min-width: 770px) {
 	.heading {
 		width: 40%;
 		margin: 25vh 5vw;
@@ -153,19 +153,12 @@
 		margin-top: 25vh;
 	}
 
-	#navbar {
-		margin-left: auto;
-		margin-right: auto;
-		align-items: center;
-	}
+
 
 	.menu {
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: space-between;
-		width: 90%;
-		margin-left: auto;
-		margin-right: auto;
 		font-size: 1.3em;
 	}
 
@@ -174,7 +167,7 @@
 	}
 
 	.logo {
-		margin-right: 40%;
+		margin-right: 30%;
 		transform: rotateZ(0deg);
 		transition: transform 3s;
 	}
@@ -197,5 +190,4 @@
 		border-radius: 10px;
 		font-size: 1.5em;
 	}
-
 }

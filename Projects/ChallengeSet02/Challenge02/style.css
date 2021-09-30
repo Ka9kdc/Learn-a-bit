@@ -54,7 +54,7 @@ h1 {
 	}
 }
 
-@media (min-width: 760px) and (max-width: 1600px) {
+@media (min-width: 770px) and (max-width: 1600px) {
 	.box {
 		--div-width: 30%;
 		width: var(--div-width);
@@ -81,3 +81,5 @@ h1 {
 		height: 20vh;
 	}
 }
+
+/* beamjobs.com */
