@@ -108,10 +108,8 @@ h1 {
 	}
 
 	.price_box {
-		/* max-height: 50vmin; */
 		font-size: 3vmin;
 		padding: 1em;
-		/* margin: 1em; */
 	}
 
 	.price_box:hover {
